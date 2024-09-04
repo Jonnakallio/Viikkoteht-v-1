@@ -1,0 +1,17 @@
+# Määritellään ikä suoraan koodiin
+ikä = 30
+
+# Maksimisyke lasketaan kaavalla 220 - ikä
+maksimisyke = 220 - ikä
+
+# Lasketaan tavoitesykealueet
+kevyt_alue = (maksimisyke * 0.5, maksimisyke * 0.6)
+kohtalainen_alue = (maksimisyke * 0.6, maksimisyke * 0.7)
+raskas_alue = (maksimisyke * 0.7, maksimisyke * 0.85)
+
+# Tulostetaan tulokset
+print(f"Ikä: {ikä} vuotta")
+print(f"Maksimisyke: {maksimisyke} lyöntiä minuutissa")
+print(f"Kevyt harjoittelu (50–60 %): {int(kevyt_alue[0])} - {int(kevyt_alue[1])} lyöntiä minuutissa")
+print(f"Kohtalainen harjoittelu (60–70 %): {int(kohtalainen_alue[0])} - {int(kohtalainen_alue[1])} lyöntiä minuutissa")
+print(f"Raskas harjoittelu (70–85 %): {int(raskas_alue[0])} - {int(raskas_alue[1])} lyöntiä minuutissa")
